@@ -8,5 +8,6 @@ function defaultTask(cb) {
 exports.browser = require('./build/gulp-tasks/browser');
 exports.jsdoc = require('./build/gulp-tasks/jsdoc');
 exports.readme = require('./build/gulp-tasks/readme');
+exports.copyType = require('./build/gulp-tasks/copy-type');
 
 exports.default = defaultTask
