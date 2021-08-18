@@ -19,31 +19,14 @@ declare namespace Faker {
     interface FakerStatic {
         locale: string;
         setLocale(locale: string): void;
-
-        animals: {
-            dog(): string;
-            cat(): string;
-            snake(): string;
-            bear(): string;
-            lion(): string;
-            cetacean(): string;
-            horse(): string;
-            bird(): string;
-            cow(): string;
-            fish(): string;
-            crocodilia(): string;
-            insect(): string;
-            rabbit(): string;
-            type(): string;
-        };
         
         address: {
             zipCodeByState(state: string): string;
             zipCode(format?: string): string;
             city(format?: string): string;
-            cityName(): string;
             cityPrefix(): string;
             citySuffix(): string;
+            cityName(): string;
             streetName(): string;
             streetAddress(useFullAddress?: boolean): string;
             streetSuffix(): string;
@@ -65,6 +48,23 @@ declare namespace Faker {
                 isMetric?: boolean,
             ): string[];
             timeZone(): string;
+        };
+
+        animals: {
+            dog(): string;
+            cat(): string;
+            snake(): string;
+            bear(): string;
+            lion(): string;
+            cetacean(): string;
+            horse(): string;
+            bird(): string;
+            cow(): string;
+            fish(): string;
+            crocodilia(): string;
+            insect(): string;
+            rabbit(): string;
+            type(): string;
         };
 
         commerce: {
@@ -137,12 +137,12 @@ declare namespace Faker {
             currencyName(): string;
             currencySymbol(): string;
             bitcoinAddress(): string;
-            iban(formatted?: boolean, countryCode?: string): string;
-            bic(): string;
             litecoinAddress(): string;
             creditCardNumber(provider?: string): string;
             creditCardCVV(): string;
             ethereumAddress(): string;
+            iban(formatted?: boolean, countryCode?: string): string;
+            bic(): string;
             transactionDescription(): string;
         };
 
@@ -235,6 +235,16 @@ declare namespace Faker {
             lines(lineCount?: number): string;
         };
 
+        mersenne: {
+            rand(max: number, min: number): string;
+            seed(s: number): string;
+            seed_array(a: number[]): string;
+        };
+
+        music: {
+            genre(): string;
+        };
+
         name: {
             firstName(gender?: number): string;
             lastName(gender?: number): string;
@@ -248,10 +258,6 @@ declare namespace Faker {
             jobDescriptor(): string;
             jobArea(): string;
             jobType(): string;
-        };
-
-        music: {
-            genre(): string;
         };
 
         phone: {

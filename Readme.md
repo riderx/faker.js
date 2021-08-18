@@ -255,6 +255,19 @@ https://github.com/faker/faker-cloud
   * phoneNumber
   * phoneNumberFormat
   * phoneFormats
+* random
+  * number
+  * float
+  * arrayElement
+  * uuid
+  * boolean
+  * word
+  * words
+  * image
+  * locale
+  * alpha
+  * alphaNumeric
+  * hexaDecimal
 * system
   * fileName
   * commonFileName
@@ -268,7 +281,6 @@ https://github.com/faker/faker-cloud
   * semver
 * time
   * recent
-* unique
 * vehicle
   * vehicle
   * manufacturer
@@ -279,6 +291,8 @@ https://github.com/faker/faker-cloud
   * color
   * vrm
   * bicycle
+* unique
+* seed
 
 
 ### Faker.fake()
