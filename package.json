@@ -10,6 +10,7 @@
     "url": "http://github.com/Marak/Faker.js.git"
   },
   "scripts": {
+    "copyType": "./node_modules/.bin/gulp copyType",
     "browser": "./node_modules/.bin/gulp browser",
     "jsdoc": "./node_modules/.bin/gulp jsdoc",
     "readme": "./node_modules/.bin/gulp readme",
