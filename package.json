@@ -2,6 +2,7 @@
   "name": "faker",
   "description": "Generate massive amounts of fake contextual data",
   "version": "5.5.3",
+  "types": "dist/faker.d.ts",
   "contributors": [
     "Marak Squires <marak.squires@gmail.com>"
   ],
